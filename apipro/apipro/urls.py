@@ -21,5 +21,8 @@ from apiapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.sample_fun),
-    path('m_view',views.model_view)
+    path('m_view',views.model_view),
+    path('u_view/<id>',views.update_view),
+    path('f1',views.fun1),
+    path('f2',views.fun2)
 ]
