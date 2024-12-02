@@ -24,5 +24,10 @@ urlpatterns = [
     path('m_view',views.model_view),
     path('u_view/<id>',views.update_view),
     path('f1',views.fun1),
-    path('f2',views.fun2)
+    path('f2/<id>',views.fun2),
+    path('class1',views.fun7.as_view()),
+    path('class2/<d>',views.fun8.as_view()),
+    path('generic',views.genericapiview.as_view()),
+    path('update/<id>',views.update.as_view()),
+
 ]
